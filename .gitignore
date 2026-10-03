@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+lifeflow.db
+.streamlit/secrets.toml
+frontend/node_modules/

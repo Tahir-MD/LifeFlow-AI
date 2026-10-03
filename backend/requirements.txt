@@ -1,0 +1,14 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+sqlalchemy==2.0.35
+pydantic==2.9.2
+email-validator==2.2.0
+python-jose==3.3.0
+bcrypt==4.2.0
+python-multipart==0.0.9
+
+# No extra package is needed for the optional Groq LLM upgrade --
+# app/services/llm_client.py talks to Groq's REST API using Python's
+# standard library. Just set GROQ_API_KEY in the environment if you
+# want it; the app works fully without it (rule-based extraction is
+# the default). See llm_client.py for details.
